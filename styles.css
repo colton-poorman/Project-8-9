@@ -1,0 +1,127 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #ffffff;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Background Image with Transparency */
+body:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #363636;
+    border-bottom: 1px solid #ddd;
+    width: 100%;
+}
+
+/* Profile Image Styling */
+header img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    /* Unique styling with rotated frame */
+    border: 3px solid #4682b4;
+    padding: 5px;
+    background-color: white;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transform: rotate(-3deg);
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8ec7ff;
+    margin-bottom: 10px;
+    font-size: 2.2rem;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #4682b4;
+    width: 80%;
+    margin: 15px auto;
+}
+
+/* Link Styles */
+a {
+    color: #75aad5;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #2c3e50;
+    text-decoration: underline;
+}
+
+/* Section Styles - Full Width */
+section {
+    padding: 30px 20px;
+    margin-bottom: 0;
+    border-bottom: 1px solid #eee;
+    width: 100%;
+}
+
+h2 {
+    color: #7793ae;
+    margin-bottom: 20px;
+    border-left: 4px solid #4682b4;
+    padding-left: 10px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #4682b4;
+    margin: 15px 0 10px 0;
+    font-size: 1.3rem;
+}
+
+p {
+    margin-bottom: 15px;
+    max-width: 800px;
+}
+
+/* List Styles */
+ul, ol {
+    padding-left: 40px;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2c3e50;
+    color: white;
+    width: 100%;
+}
